@@ -4,6 +4,7 @@
 
 #root{
   padding: 0;
+  max-width: 100%;
 }
 
 /* 메인페이지 */

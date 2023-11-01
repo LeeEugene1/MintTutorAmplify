@@ -10,17 +10,17 @@ function App() {
         <BaseSection>
             <div className="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
                 <span data-aos="fade-right" data-aos-once="true" className="text-base text-gradient font-semibold uppercase">
-                Sign Up Today
+                  Sign Up Today
                 </span>
                 <h1
-                data-aos="fade-right"
-                data-aos-once="true"
-                className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+                  data-aos="fade-right"
+                  data-aos-once="true"
+                  className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
                 >
                 Create your <span className="text-header-gradient">Personal Tutor</span> on website
                 </h1>
                 <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" className="paragraph hidden sm:block">
-                Empower Your Learning Journey! Create your customized tutor on our website and embark on a personalized educational adventure tailored just for you.
+                  Empower Your Learning Journey! Create your customized tutor on our website and embark on a personalized educational adventure tailored just for you.
                 </p>
                 <div
                 data-aos="fade-up"
@@ -83,7 +83,7 @@ function App() {
       </section>
 
       <section className="w-full h-[100dvh]">
-        <div data-aos="fade-down" className="relative max-w-screen-xl h-full items-center px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden aos-init aos-animate" data-v-b444fb2c="">
+        <div data-aos="fade-down" className="relative max-w-[1200px] h-full items-center px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden aos-init aos-animate" data-v-b444fb2c="">
           <div className="col-span-12 lg:col-span-7">
             <div className="w-full">
               <img src="/img/chat_bg.jpeg" alt="" className="w-[95%]"/>
@@ -104,7 +104,7 @@ function App() {
           <h2 data-aos="flip-down" className="text-3xl sm:text-4xl font-semibold text-center aos-init aos-animate" data-v-b444fb2c="">
             What can you expect?
           </h2> 
-          <div data-aos="fade-up" className="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8 aos-init aos-animate" data-v-b444fb2c="">
+          <div data-aos="fade-up" className="relative w-full max-w-[1200px] flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8 aos-init aos-animate" data-v-b444fb2c="">
             <div className="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center" >
               {/* <img src="/_nuxt/img/sign-up.4afd242.png" alt="" className="max-w-[245px] mx-auto"/>  */}
               <p className="text-[50px] mx-auto">🤖</p>

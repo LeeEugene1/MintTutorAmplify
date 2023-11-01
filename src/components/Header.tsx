@@ -63,7 +63,7 @@ const Header:React.FC= () => {
   return (
     <div id="navbar">
       <header className="bg-[#EBF5FE] p-4 dark:bg-slate-900/75">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto max-w-[1200px] flex justify-between items-center">
             <div className="text-white text-xl font-semibold">
               <a className="text-header-gradient" href='/'>Mint Tutor</a>
             </div>
@@ -132,7 +132,7 @@ const Header:React.FC= () => {
           <div className="fixed z-10 inset-0 bg-black bg-opacity-50 backdrop-blur-sm
         flex justify-center items-center" onClick={handleCloseModal}>
           </div>
-          <div className="shell relative overflow-hidden rounded-none md:rounded-3xl">
+          <div className="shell absolute right-0 left-0 overflow-hidden rounded-none md:rounded-3xl">
             <div className="flex justify-between text-center">
               <h3>Connect wallet</h3>
               <svg onClick={handleCloseModal} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -170,7 +170,7 @@ const Header:React.FC= () => {
                                     <Loading/>
                                     : 
                                     <>
-                                      <img src="https://snapshot.4everland.link/ipfs/QmTE7VPXMhriKAobMWEiC5S3oG22p4G6AXGyGdNWQTQ3Fv" height="28" width="28" className="-mt-1 mr-2" alt="MetaMask"/> 
+                                      <img src="/img/logo/logo_metamask.png" height="28" width="28" className="-mt-1 mr-2" alt="MetaMask"/> 
                                       MetaMask
                                     </>
                                 }
