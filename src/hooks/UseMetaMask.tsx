@@ -146,7 +146,8 @@ export const MetaMaskContextProvider = ({children}:PropsWithChildren) => {
             }),
         }
 //http://localhost:500/auth
-        await fetch('https://test.sheepfarm.io/profile/auth-test',option)
+//https://test.sheepfarm.io/profile/auth-test
+        await fetch('https://adm-test.sbxg.win/auth/auth-test',option)
         .then(res => res.json())
         .then(result => {
             console.log('result',result)
@@ -250,7 +251,9 @@ export const MetaMaskContextProvider = ({children}:PropsWithChildren) => {
             let count = 0
             const timer:NodeJS.Timer = setInterval(async () => {
                 count++
-                const {status, address, jwt_token} = await fetch('https://test.sheepfarm.io/profile/klipResult-test', option).then(res => res.json())
+                //http://localhost:500/klipResult
+                //https://test.sheepfarm.io/profile/klipResult-test
+                const {status, address, jwt_token} = await fetch('https://adm-test.sbxg.win/auth/klipResult-test', option).then(res => res.json())
                 console.debug(status)
                 if(status === 'completed'){
                     localStorage.setItem('dapp-auth', JSON.stringify({jwt_token}))
