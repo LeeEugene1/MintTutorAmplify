@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Routes>
               <Route path="/" element={<App />} />
               <Route path="/list" element={<List />} />
-              <Route path="/chat/*" element={<Chat />} />
+              <Route path="/chat" element={<Chat />} />
             </Routes>
           </BrowserRouter>
         <Footer/>
