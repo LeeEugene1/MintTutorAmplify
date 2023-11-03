@@ -206,19 +206,19 @@ export const MetaMaskContextProvider = ({children}:PropsWithChildren) => {
         if (!isMetamaskInstalled()) {
             return false
         }
-        if (window.location.href.includes('localhost') || window.location.href.includes('test')) {
+        // if (window.location.href.includes('localhost') || window.location.href.includes('test')) {
             connectNetwork(
                 '0x13881', //80001
                 'Polygon Mumbai',
                 'https://rpc-mumbai.maticvigil.com'
             )
-        } else {
-            connectNetwork(
-                '0x89', //137
-                'Polygon Mainnet',
-                'https://polygon-rpc.com/'
-            )
-        }
+        // } else {
+        //     connectNetwork(
+        //         '0x89', //137
+        //         'Polygon Mainnet',
+        //         'https://polygon-rpc.com/'
+        //     )
+        // }
     }
 
     const connectKlip = async () => {
