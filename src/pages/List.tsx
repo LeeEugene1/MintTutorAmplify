@@ -4,6 +4,7 @@ import { UseMetaMask } from '../hooks/UseMetaMask';
 
 import Card from '../components/Card';
 import Loading from '../components/Loading';
+import { useNavigate } from 'react-router-dom';
 
 type CardType = {
   tokenId:string | number,
@@ -17,6 +18,7 @@ type TutorType = {
 }
 
 export default function list() {
+  const navigate = useNavigate();
   const {wallet} = UseMetaMask()
   const [cardList, setCardList] = useState<[] | CardType[]>([])
   const [isConnecting, setIsConnecting] = useState(false)
@@ -84,7 +86,7 @@ export default function list() {
   const handleChat = (tutorType: string | number) => {
     console.log(tutorType)
     // router.push(`/chat?tutor=${tutorType}`)
-    location.href = `/chat?tutor=${tutorType}`
+    navigate(`/chat?tutor=${tutorType}`)
   }
   return (
     <div className='p-8'>
