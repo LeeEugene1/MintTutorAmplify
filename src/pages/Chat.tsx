@@ -13,11 +13,6 @@ interface Message {
     sender: string;
 }
 
-type Msg = {
-    message: string;
-    sender: string;
-}
-
 export default function Chat() {
     const [tutorInfo, setTutorInfo] = useState<tutorInfoType>()
     const [typing, setTyping] = useState(false)
@@ -132,11 +127,12 @@ export default function Chat() {
                                 scrollBehavior='smooth'
                                 typingIndicator={typing ? <TypingIndicator content="Tutor is typing"/>:null}
                             >
-                                {messages.map((msg:Msg, i:number)=>{
+                                {messages.map(({message, sender}, i:number)=>{
                                     return <Message key={i} model={{
-                                        message: msg.message,
-                                        sentTime: "just now",
-                                        sender: msg.sender,
+                                        message,
+                                        sender,
+                                        direction: "incoming",
+                                        position: "normal"
                                     }}/>
                                 })}
                             </MessageList>
