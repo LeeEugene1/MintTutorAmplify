@@ -41,12 +41,12 @@ function App() {
               data-aos-delay="700"
               className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
             >
-              <a
+              {/* <a
                 className="max-w-full rounded bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
                 href="/list"
               >
                 <button className="px-4 py-2">Get Started</button>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="hidden sm:block col-span-12 lg:col-span-6">

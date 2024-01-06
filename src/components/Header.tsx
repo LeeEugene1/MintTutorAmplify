@@ -38,11 +38,7 @@ const Header: React.FC = () => {
     if (window.location.pathname === "/") {
       AOS.init();
     }
-    if (wallet?.accounts?.length === 0) {
-      if (window.location.pathname === "/list") {
-        setShowModal(true);
-      }
-    } else {
+    if (wallet?.accounts?.length > 0) {
       setShowModal(false);
       handleInitModal();
     }
@@ -64,9 +60,6 @@ const Header: React.FC = () => {
   const handleCloseModal = () => {
     setShowModal(false);
     handleInitModal();
-    if (window.location.pathname === "/list") {
-      window.location.href = "/";
-    }
   };
 
   const handleInitModal = () => {
