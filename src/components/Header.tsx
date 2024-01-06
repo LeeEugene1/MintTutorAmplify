@@ -64,6 +64,9 @@ const Header: React.FC = () => {
   const handleCloseModal = () => {
     setShowModal(false);
     handleInitModal();
+    if (window.location.pathname === "/list") {
+      window.location.href = "/";
+    }
   };
 
   const handleInitModal = () => {
